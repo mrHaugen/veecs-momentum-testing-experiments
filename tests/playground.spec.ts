@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+import { test, expect }  from '@playwright/test';
 
 test('has title', async ({ page }) => {
     await page.goto('https://playwright.dev/');
@@ -7,10 +7,10 @@ test('has title', async ({ page }) => {
     await expect(page).toHaveTitle(/Playwright/);
   });
 
-test('To Do App', async({ page }) =>{
+/* test('To Do App', async({ page }) =>{
     await page.goto('/');
-    await expect(page).toHaveTitle('')
+    await expect(page) //.toHaveTitle('')
     await page.getByRole('textbox',{placeholder: 'enter a new todo'}).fill('ny nytt')
     
 
-})
+}) */

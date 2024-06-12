@@ -1,23 +1,38 @@
-You can run several commands:
+# create-svelte
 
-  npx playwright test
-    Runs the end-to-end tests.
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-  npx playwright test --ui
-    Starts the interactive UI mode.
+## Creating a project
 
-  npx playwright test --project=chromium
-    Runs the tests only on Desktop Chrome.
+If you're seeing this, you've probably already done this step. Congrats!
 
-  npx playwright test example
-    Runs the tests in a specific file.
+```bash
+# create a new project in the current directory
+npm create svelte@latest
 
-  npx playwright test --debug
-    Runs the tests in debug mode.
+# create a new project in my-app
+npm create svelte@latest my-app
+```
 
-  npx playwright codegen
-    Auto generate tests with Codegen.
+## Developing
 
-We suggest that you begin by typing:
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-    npx playwright test
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
