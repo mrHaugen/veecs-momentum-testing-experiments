@@ -110,7 +110,7 @@
 		{#each Array.from(Array(6).keys()) as row (row)}
 			{@const current = row === i}
 			<h2 class="visually-hidden">Row {row + 1}</h2>
-			<div class="row" class:current>
+			<div class="row" class:current data-testid="rad{row}">
 				{#each Array.from(Array(5).keys()) as column (column)}
 					{@const guess = current ? currentGuess : data.guesses[row]}
 					{@const answer = data.answers[row]?.[column]}
@@ -119,7 +119,7 @@
 					{@const exact = answer === 'x'}
 					{@const close = answer === 'c'}
 					{@const missing = answer === '_'}
-					<div class="letter" class:exact class:close class:missing class:selected>
+					<div class="letter" class:exact class:close class:missing class:selected data-testid="rad{row}celle{column}">
 						{value}
 						<span class="visually-hidden">
 							{#if exact}

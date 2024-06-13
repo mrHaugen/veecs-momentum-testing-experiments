@@ -21,10 +21,18 @@ test('get started link', async ({ page }) => {
 test('localhost testing', async ({ page }) => {
   await page.goto('http://localhost:5173/test');
 
-  // Click the get started link.
+
   await page.getByTestId("forNavn").clear()
   await page.getByLabel('First name:').clear()
 
-  // Expects page to have a heading with the name of Installation.
-  //await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+});
+
+test('localhost navigering', async ({ page }) => {
+  await page.goto('http://localhost:5173');
+  await page.getByTestId("sverdle").click()
+  await page.getByTestId('rad').isVisible()
+  await page.getByTestId('rad0celle0').isEnabled()
+  await page.getByTestId('rad0celle1').isDisabled()
+  await page.getByTestId('rad2').isEnabled()
+
 });
