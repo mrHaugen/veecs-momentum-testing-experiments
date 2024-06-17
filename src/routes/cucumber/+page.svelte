@@ -1,12 +1,12 @@
 <script>
 	import '../styles.css';
     import cucumber_img from '$lib/images/1080px-Cucumber_BNC.jpg';
-    import cucumber_favicon from '$lib/images/favicon.ico';
+   // import cucumber_favicon from '$lib/images/favicon.ico';
 </script>
 
 <head>
 <title>Cucumber</title>
-<link rel= "icon" type="image/x-icon" href={cucumber_favicon}/>
+<!--link rel= "icon" type="image/x-icon" href={cucumber_favicon}/-->
 </head>
 <body>
 
