@@ -1,12 +1,11 @@
 <script>
 	import '../styles.css';
     import cucumber_img from '$lib/images/1080px-Cucumber_BNC.jpg';
-   // import cucumber_favicon from '$lib/images/favicon.ico';
+    import erik_cucmber from '$lib/images/erik_cucumber.png'
 </script>
 
 <head>
 <title>Cucumber</title>
-<!--link rel= "icon" type="image/x-icon" href={cucumber_favicon}/-->
 </head>
 <body>
 
@@ -15,14 +14,17 @@
 <br />
 
 <!-- svelte-ignore a11y-missing-attribute -->
-<img class="cucumberImage" id="img_cucumber" src={cucumber_img}/>
+
+<img class="erikCucumberImage" id="img_erik_cucumber" src={erik_cucmber}/>
 
 <p class="p1" id = "p1">Why does Brage like cucumbers? <br /><br />
+     
+    <img class="cucumberImage" id="img_cucumber" alt="a single cucumber, source: Wikipedia" src={cucumber_img}/>   
 
 Cucumber is a nutritious low-calorie vegetable with refreshing taste. It has multiple usues all over the Earth. <br />
 It is known for for its' multiple culinary uses like:
 </p>
-<ul>
+<ul id='cucumber_list'>
             <li>slicing</li>
             <li>pickling</li>
             <li>gherkin</li>
@@ -30,7 +32,7 @@ It is known for for its' multiple culinary uses like:
 </ul>
 
 
-<br />
+<br /><br />
 <table id = "nutrition_table_cucumber">
     <tr>
         <th>Nutrition</th>
