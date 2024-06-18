@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 
 const baseUrl= 'http://localhost:5173/'
 
-test.describe('some random tests without gherkin', () =>{
+test.describe('some random tests without gherkin', () => {
 
 test('navigate to localhost', async ({ page }) => {
     await page.goto(baseUrl);
